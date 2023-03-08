@@ -9,9 +9,11 @@ This application is packaged as a jar which has Tomcat 8 embedded. No Tomcat or 
 -You can build the project and run the tests by running mvn clean package
 - Once successfully built, you can run the service by one of these two methods:
 
-`- mvn clean package
+
+- mvn clean package
 - java -jar  target/assignment-0.0.1-SNAPSHOT.jar
-- mvn spring-boot:run`
+- mvn spring-boot:run
+
 
 ## About the Service
 
