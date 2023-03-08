@@ -1,17 +1,17 @@
 ## Spring Boot Musala Soft Drone Project
------
+
 This is a sample Java / Maven / Spring Boot (version 2.7.9) application
 
 ## How to Run
------
+
 This application is packaged as a jar which has Tomcat 8 embedded. No Tomcat or JBoss installation is necessary. You run it using the java -jar command.
 -Make sure you are using JDK 1.8 and Maven 3.x
 -You can build the project and run the tests by running mvn clean package
 - Once successfully built, you can run the service by one of these two methods:
 
-`mvn clean package
-java -jar  target/assignment-0.0.1-SNAPSHOT.jar
- mvn spring-boot:run`
+`- mvn clean package
+- java -jar  target/assignment-0.0.1-SNAPSHOT.jar
+- mvn spring-boot:run`
 
 ## About the Service
 
