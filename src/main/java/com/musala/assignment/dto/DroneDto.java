@@ -1,29 +1,16 @@
-package com.musala.assignment.entity;
+package com.musala.assignment.dto;
 
+public class DroneDto {
 
-import com.musala.assignment.dto.DroneState;
-
-import javax.persistence.*;
-import java.util.Set;
-
-@Entity
-@Table(name = "drones")
-public class Drone {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String serialNumber;
     private String model;
-    private double weight;
+    private String weight;
     private int batteryCapacity;
-    @Enumerated(EnumType.STRING)
-    private DroneState state;
-    @OneToMany(mappedBy = "drone")
-    private Set<Medication> items;
 
-    public Drone(Long id, String serialNumber, String model, double weight, int batteryCapacity, DroneState state) {
+    private DroneState state;
+
+    public DroneDto(Long id, String serialNumber, String model, String weight, int batteryCapacity, DroneState state) {
         this.id = id;
         this.serialNumber = serialNumber;
         this.model = model;
@@ -32,7 +19,7 @@ public class Drone {
         this.state = state;
     }
 
-    public Drone() {
+    public DroneDto() {
     }
 
     public Long getId() {
@@ -59,11 +46,11 @@ public class Drone {
         this.model = model;
     }
 
-    public double getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -83,4 +70,3 @@ public class Drone {
         this.state = state;
     }
 }
-
