@@ -1,6 +1,7 @@
 package com.musala.assignment.exception;
 
-import com.example.drone.dto.ErrorDetails;
+
+import com.musala.assignment.dto.ErrorDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
